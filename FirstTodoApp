@@ -1,0 +1,67 @@
+import React from 'react'
+import Header from './components/Header'
+import TodoItem from './components/TodoItem'
+import Card from './components/Card'
+
+
+function App(){
+  // var firstName = "javed";
+  // var lastName = "Shuja Uddin";
+
+  // const textStyle = {
+    
+  //   backgroundColor:'red',
+  //   fontSize:'50px' 
+  // }
+
+  var obj = [
+    {
+      name:"arsal", 
+      email:"arsaljavedk@gmail.com", 
+      number:"03123082964"
+    },
+    {
+      name:"javed", 
+      email:"javedkhatri@gmail.com", 
+      number:"03360357366"
+    },
+    {
+      name:"khan", 
+      email:"khankareem@gmail.com", 
+      number:"03152204140"
+    },
+    {
+      name:"arsalan", 
+      email:"arsalantahir@gmail.com", 
+      number:"03226056896"
+    },
+  ]
+
+  return(
+    <div className="todo-list">
+      {/* <Header /> */}
+      {/* <h1 style={textStyle}>Hello {`${firstName} ${lastName}`}</h1> */}
+
+      {/* <TodoItem />
+      <TodoItem />
+      <TodoItem />
+      <TodoItem /> */}
+
+      <Card 
+      contect={obj[0]}
+      // name="arsal" 
+      // email="arsaljavedk@gmail.com" 
+      // number="03123082964"
+      />
+      <Card contect={obj[1]}/>
+      <Card contect={obj[2]}/>
+      <Card contect={obj[3]}/>
+      {/* <Card name="javed" email="javedkhatri@gmail.com" number="03360357366"/>
+      <Card name="khan" email="khankareem@gmail.com" number="03152204140"/>
+      <Card name="arsala" email="arsalantahir@gmail.com" number="03226056896"/> */}
+    </div>
+  );
+}
+
+export default App
+
